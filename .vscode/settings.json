@@ -1,9 +1,0 @@
-{
-  "files.associations": {
-    "diagram.mokxi.json": "json"
-  },
-  "files.exclude": {
-    ".mokxi": true
-  },
-  "mokxi.projectId": "GM4nzqcTMlV7WeQx"
-}
