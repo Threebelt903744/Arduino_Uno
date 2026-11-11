@@ -1,0 +1,412 @@
+{
+  "version": 1,
+  "name": "Untitled project",
+  "parts": [
+    {
+      "id": "mega25601",
+      "type": "mega2560",
+      "props": {},
+      "x": 1000,
+      "y": 300,
+      "rot": 270,
+      "locked": true
+    },
+    {
+      "id": "rotary1",
+      "type": "rotary",
+      "props": {
+        "detents": "20",
+        "bounce": true
+      },
+      "x": 760,
+      "y": 160,
+      "rot": 270
+    },
+    {
+      "id": "rotary2",
+      "type": "rotary",
+      "props": {
+        "detents": "20",
+        "bounce": true
+      },
+      "x": 760,
+      "y": 320,
+      "rot": 270
+    },
+    {
+      "id": "rotary3",
+      "type": "rotary",
+      "props": {
+        "detents": "20",
+        "bounce": true
+      },
+      "x": 760,
+      "y": 480,
+      "rot": 270
+    },
+    {
+      "id": "mp15841",
+      "type": "mp1584",
+      "props": {
+        "volts": 5
+      },
+      "x": 460,
+      "y": 180,
+      "rot": 0
+    },
+    {
+      "id": "bb1",
+      "type": "breadboard-half",
+      "props": {},
+      "x": 740,
+      "y": -540,
+      "rot": 90
+    },
+    {
+      "id": "dcjack1",
+      "type": "dcjack",
+      "props": {
+        "adapter": "12V 1A"
+      },
+      "x": 700,
+      "y": -280,
+      "rot": 0
+    }
+  ],
+  "wires": [
+    {
+      "id": "w1",
+      "from": "mega25601:VIN",
+      "to": "bb1:j29",
+      "color": "#e14b4b",
+      "bends": [
+        {
+          "x": 1720,
+          "y": 720
+        },
+        {
+          "x": 1720,
+          "y": -80
+        }
+      ]
+    },
+    {
+      "id": "w2",
+      "from": "rotary1:VCC",
+      "to": "bb1:f30",
+      "color": "#e14b4b",
+      "bends": [
+        {
+          "x": 960,
+          "y": 280
+        },
+        {
+          "x": 960,
+          "y": -60
+        }
+      ]
+    },
+    {
+      "id": "w3",
+      "from": "rotary2:VCC",
+      "to": "bb1:g30",
+      "color": "#e14b4b",
+      "bends": [
+        {
+          "x": 1000,
+          "y": 440
+        },
+        {
+          "x": 1000,
+          "y": -60
+        }
+      ]
+    },
+    {
+      "id": "w4",
+      "from": "rotary3:VCC",
+      "to": "bb1:h30",
+      "color": "#e14b4b",
+      "bends": [
+        {
+          "x": 960,
+          "y": 600
+        },
+        {
+          "x": 960,
+          "y": -60
+        }
+      ]
+    },
+    {
+      "id": "w5",
+      "from": "mp15841:OUT+",
+      "to": "bb1:i30",
+      "color": "#e14b4b",
+      "bends": [
+        {
+          "x": 640,
+          "y": 200
+        },
+        {
+          "x": 640,
+          "y": -60
+        }
+      ]
+    },
+    {
+      "id": "w6",
+      "from": "mp15841:IN+",
+      "to": "bb1:i29",
+      "color": "#e14b4b",
+      "bends": [
+        {
+          "x": 440,
+          "y": 200
+        },
+        {
+          "x": 440,
+          "y": -80
+        }
+      ]
+    },
+    {
+      "id": "w7",
+      "from": "dcjack1:V+",
+      "to": "bb1:h29",
+      "color": "#e14b4b",
+      "bends": [
+        {
+          "x": 740,
+          "y": -80
+        },
+        {
+          "x": 1200,
+          "y": -80
+        }
+      ]
+    },
+    {
+      "id": "w8",
+      "from": "dcjack1:V-",
+      "to": "bb1:a28",
+      "color": "#7a8290",
+      "bends": [
+        {
+          "x": 780,
+          "y": -100
+        }
+      ]
+    },
+    {
+      "id": "w9",
+      "from": "mp15841:IN-",
+      "to": "bb1:b28",
+      "color": "#7a8290",
+      "bends": [
+        {
+          "x": 400,
+          "y": 260
+        },
+        {
+          "x": 400,
+          "y": -100
+        }
+      ]
+    },
+    {
+      "id": "w10",
+      "from": "mp15841:OUT-",
+      "to": "bb1:a27",
+      "color": "#7a8290",
+      "bends": [
+        {
+          "x": 680,
+          "y": 260
+        },
+        {
+          "x": 680,
+          "y": -120
+        }
+      ]
+    },
+    {
+      "id": "w11",
+      "from": "rotary1:GND",
+      "to": "bb1:b27",
+      "color": "#7a8290",
+      "bends": [
+        {
+          "x": 940,
+          "y": 300
+        },
+        {
+          "x": 940,
+          "y": -120
+        }
+      ]
+    },
+    {
+      "id": "w12",
+      "from": "rotary2:GND",
+      "to": "bb1:c27",
+      "color": "#7a8290",
+      "bends": [
+        {
+          "x": 980,
+          "y": 460
+        },
+        {
+          "x": 980,
+          "y": -120
+        }
+      ]
+    },
+    {
+      "id": "w13",
+      "from": "rotary3:GND",
+      "to": "bb1:d27",
+      "color": "#7a8290",
+      "bends": [
+        {
+          "x": 980,
+          "y": 620
+        },
+        {
+          "x": 980,
+          "y": -120
+        }
+      ]
+    },
+    {
+      "id": "w14",
+      "from": "rotary1:CLK",
+      "to": "mega25601:2",
+      "color": "#fafafa",
+      "bends": [
+        {
+          "x": 1040,
+          "y": 220
+        },
+        {
+          "x": 1040,
+          "y": 520
+        }
+      ]
+    },
+    {
+      "id": "w15",
+      "from": "rotary1:DT",
+      "to": "mega25601:3",
+      "color": "#1f9d55",
+      "bends": [
+        {
+          "x": 1080,
+          "y": 240
+        },
+        {
+          "x": 1080,
+          "y": 540
+        }
+      ]
+    },
+    {
+      "id": "w16",
+      "from": "rotary2:CLK",
+      "to": "mega25601:18",
+      "color": "#fafafa",
+      "bends": [
+        {
+          "x": 1120,
+          "y": 380
+        },
+        {
+          "x": 1120,
+          "y": 360
+        }
+      ]
+    },
+    {
+      "id": "w17",
+      "from": "rotary2:DT",
+      "to": "mega25601:19",
+      "color": "#1f9d55",
+      "bends": [
+        {
+          "x": 1160,
+          "y": 400
+        },
+        {
+          "x": 1160,
+          "y": 340
+        }
+      ]
+    },
+    {
+      "id": "w18",
+      "from": "rotary3:CLK",
+      "to": "mega25601:20",
+      "color": "#fafafa",
+      "bends": [
+        {
+          "x": 900,
+          "y": 500
+        },
+        {
+          "x": 1140,
+          "y": 500
+        },
+        {
+          "x": 1140,
+          "y": 320
+        }
+      ]
+    },
+    {
+      "id": "w19",
+      "from": "rotary3:DT",
+      "to": "mega25601:21",
+      "color": "#1f9d55",
+      "bends": [
+        {
+          "x": 1160,
+          "y": 560
+        },
+        {
+          "x": 1160,
+          "y": 300
+        }
+      ]
+    },
+    {
+      "id": "w20",
+      "from": "mega25601:GNDd",
+      "to": "bb1:e28",
+      "color": "#7a8290",
+      "bends": [
+        {
+          "x": 1660,
+          "y": 200
+        },
+        {
+          "x": 1660,
+          "y": -100
+        }
+      ]
+    }
+  ],
+  "projects": {
+    "*": {
+      "files": {
+        "sketch.ino": "// Mokxi.\n// This circuit has no board, so Run simulates the parts only.\n// Add a board and pick a program in its Firmware panel: the editor then shows\n// that program's source, and Run builds what you type here for that board.\n\nvoid setup() {\n  pinMode(13, OUTPUT);\n  Serial.begin(115200);\n}\n\nvoid loop() {\n  digitalWrite(13, HIGH);\n  delay(500);\n  digitalWrite(13, LOW);\n  delay(500);\n}\n"
+      },
+      "main": "sketch.ino"
+    },
+    "mega25601": {
+      "files": {
+        "sketch.ino": "// --- Pin Definitions for 3 Optical Encoders on Arduino Mega ---\n// Encoder 1\nconst int enc1_pinA = 2; \nconst int enc1_pinB = 3; \n\n// Encoder 2\nconst int enc2_pinA = 18;\nconst int enc2_pinB = 19;\n\n// Encoder 3\nconst int enc3_pinA = 20;\nconst int enc3_pinB = 21;\n\n// --- Position Variables ---\n// Marked 'volatile' because they are changed inside Interrupt Service Routines (ISRs)\nvolatile long enc1_pos = 0;\nvolatile long enc2_pos = 0;\nvolatile long enc3_pos = 0;\n\nvoid setup() {\n  Serial.begin(115200);\n  \n  // Set all encoder pins as inputs with internal pull-up resistors enabled\n  pinMode(enc1_pinA, INPUT_PULLUP);\n  pinMode(enc1_pinB, INPUT_PULLUP);\n  \n  pinMode(enc2_pinA, INPUT_PULLUP);\n  pinMode(enc2_pinB, INPUT_PULLUP);\n  \n  pinMode(enc3_pinA, INPUT_PULLUP);\n  pinMode(enc3_pinB, INPUT_PULLUP);\n\n  // --- Attach Interrupts ---\n  // We trigger on 'CHANGE' to catch both rising and falling edges for maximum resolution\n  \n  // Encoder 1 Interrupts\n  attachInterrupt(digitalPinToInterrupt(enc1_pinA), isr_enc1A, CHANGE);\n  attachInterrupt(digitalPinToInterrupt(enc1_pinB), isr_enc1B, CHANGE);\n  \n  // Encoder 2 Interrupts\n  attachInterrupt(digitalPinToInterrupt(enc2_pinA), isr_enc2A, CHANGE);\n  attachInterrupt(digitalPinToInterrupt(enc2_pinB), isr_enc2B, CHANGE);\n\n  // Encoder 3 Interrupts\n  attachInterrupt(digitalPinToInterrupt(enc3_pinA), isr_enc3A, CHANGE);\n  attachInterrupt(digitalPinToInterrupt(enc3_pinB), isr_enc3B, CHANGE);\n\n  Serial.println(\"Encoder System Initialized.\");\n}\n\nvoid loop() {\n  // Briefly disable interrupts to safely copy the volatile position variables\n  noInterrupts();\n  long pos1 = enc1_pos;\n  long pos2 = enc2_pos;\n  long pos3 = enc3_pos;\n  interrupts();\n\n  // Print the positions to the Serial Monitor\n  Serial.print(\"E1: \"); Serial.print(pos1);\n  Serial.print(\" | E2: \"); Serial.print(pos2);\n  Serial.print(\" | E3: \"); Serial.println(pos3);\n  \n  delay(100); // Small delay to make the serial output readable\n}\n\n// =========================================================================\n// INTERRUPT SERVICE ROUTINES (ISRs)\n// These functions run automatically in the background whenever a pin changes state.\n// They determine direction by comparing the state of Pin A to Pin B.\n// =========================================================================\n\n// --- Encoder 1 ISRs ---\nvoid isr_enc1A() {\n  if (digitalRead(enc1_pinA) == digitalRead(enc1_pinB)) {\n    enc1_pos++;\n  } else {\n    enc1_pos--;\n  }\n}\nvoid isr_enc1B() {\n  if (digitalRead(enc1_pinA) != digitalRead(enc1_pinB)) {\n    enc1_pos++;\n  } else {\n    enc1_pos--;\n  }\n}\n\n// --- Encoder 2 ISRs ---\nvoid isr_enc2A() {\n  if (digitalRead(enc2_pinA) == digitalRead(enc2_pinB)) {\n    enc2_pos++;\n  } else {\n    enc2_pos--;\n  }\n}\nvoid isr_enc2B() {\n  if (digitalRead(enc2_pinA) != digitalRead(enc2_pinB)) {\n    enc2_pos++;\n  } else {\n    enc2_pos--;\n  }\n}\n\n// --- Encoder 3 ISRs ---\nvoid isr_enc3A() {\n  if (digitalRead(enc3_pinA) == digitalRead(enc3_pinB)) {\n    enc3_pos++;\n  } else {\n    enc3_pos--;\n  }\n}\nvoid isr_enc3B() {\n  if (digitalRead(enc3_pinA) != digitalRead(enc3_pinB)) {\n    enc3_pos++;\n  } else {\n    enc3_pos--;\n  }\n}"
+      },
+      "main": "sketch.ino"
+    }
+  }
+}
